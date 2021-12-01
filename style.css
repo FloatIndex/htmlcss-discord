@@ -10,6 +10,24 @@ html {
 }
 /* fine regole generali */
 
+
+
+/* regole comuni */
+.container {
+    width: 80%;
+    /* max-width: 1180px */
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* fine regole comuni */
+
+
+
 /* debug */
 .debug {
     width: 100%;
@@ -18,6 +36,11 @@ html {
 
 header.debug {
     background-color: rgb(42, 110, 212);
+}
+
+.debug .container {
+    height: 100%;
+    border: 1px solid black;
 }
 
 #jumbotron.debug {
@@ -34,19 +57,67 @@ footer.debug {
 /* fine debug */
 
 
-/* regole comuni */
-
-/* fine regole comuni */
-
 
 /* regole header */
+header {
+    width: 100%;
+    line-height: 80px;
+    background-color: #3163e0;
+}
 
+header .logo {
+    float: left;
+    width: 15%;
+}
+
+header .logo img {
+    vertical-align: middle;
+}
+
+header nav {
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#login {
+    float: right;
+    width: 15%;
+    text-align: right;
+}
+
+header .btn {
+    color: #000;
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
 /* fine regole header */
+
+
+
+/* regole jumbotron */
+
+/* fine jumbotron */
+
 
 
 /* regole main */
 
 /* fine regole main */
+
 
 
 /* regole footer */
