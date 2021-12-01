@@ -1,3 +1,4 @@
+/* regole generali */
 * {
     margin: 0;
     padding: 0;
@@ -7,3 +8,47 @@
 html {
     font-family: Helvetica, sans-serif;
 }
+/* fine regole generali */
+
+/* debug */
+.debug {
+    width: 100%;
+    height: 500px;
+}
+
+header.debug {
+    background-color: rgb(42, 110, 212);
+}
+
+#jumbotron.debug {
+    background-color: rgb(72, 128, 212);
+}
+
+main.debug {
+    background-color: rgb(255, 254, 168);
+}
+
+footer.debug {
+    background-color: rgb(228, 228, 228);
+}
+/* fine debug */
+
+
+/* regole comuni */
+
+/* fine regole comuni */
+
+
+/* regole header */
+
+/* fine regole header */
+
+
+/* regole main */
+
+/* fine regole main */
+
+
+/* regole footer */
+
+/* fine regole footer */
