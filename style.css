@@ -16,7 +16,7 @@ html {
 /* regole comuni */
 .container {
     width: 75%;
-    /* max-width: 1180px */
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -103,8 +103,18 @@ a {
     color: #000;
 }
 
-.btn.colored {
+.btn.black {
+    background-color: #000;
     color: #fff;
+}
+
+.btn.blue {
+    color: #fff;
+    background-color: rgb(138, 156, 218);
+}
+
+.btn.blue:hover, .btn.white:hover, .btn.black:hover {
+    color: #255ee9;
 }
 /* fine regole comuni */
 
@@ -166,7 +176,7 @@ header nav ul li {
     display: inline-block;
 }
 
-#jumbotron .btn.colored {
+#jumbotron .btn.black {
     background-color: #000;
     color: #fff;
 }
@@ -241,9 +251,8 @@ main section.stack .img-box img {
     object-fit: contain;
 }
 
-main section.stack .cta-box .btn.colored {
+main section.stack .cta-box .btn.blue {
     display: inline-block;
-    background-color: rgb(138, 156, 218);
 }
 
 main section.stack .cta-box .btn i {
@@ -286,7 +295,6 @@ footer .row.menu {
 
 footer .row.menu .title {
     color: rgb(115, 137, 219);
-    font-weight: bold;
 }
 
 footer .row.menu .lang-social {
@@ -310,7 +318,11 @@ footer .row.menu .column {
 }
 
 footer .row.menu .column li {
-    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer .row.menu .column li:hover {
+    text-decoration: underline;
 }
 /* fine row menu */
 
@@ -335,8 +347,7 @@ footer .row.bottom .logo img {
     text-align: right;
 }
 
-#register .btn.colored {
-    background-color: rgb(138, 156, 218);
+#register .btn.blue {
     font-size: 0.8em;
 }
 /* fine row bottom */
