@@ -12,62 +12,114 @@ html {
 
 
 
+
 /* regole comuni */
 .container {
-    width: 80%;
+    width: 75%;
     /* max-width: 1180px */
     margin: 0 auto;
 }
 
-.clearfix::after {
+.row::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.pt-150px {
+    padding-top: 150px;
+}
+
+.pt-100px {
+    padding-top: 150px;
+}
+
+.pt-80px {
+    padding-top: 80px;
+}
+
+.pb-150px {
+    padding-bottom: 150px;
+}
+
+.mb-100px {
+    margin-bottom: 100px;
+}
+
+.mb-50px {
+    margin-bottom: 50px;
+}
+
+.mb-40px {
+    margin-bottom: 40px;
+}
+
+.mb-30px {
+    margin-bottom: 30px;
+}
+
+.mb-20px {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.6em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.btn.large {
+    padding: 16px 32px;
+    border-radius: 40px;
+}
+
+.btn.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn.colored {
+    color: #fff;
 }
 /* fine regole comuni */
 
 
 
-/* debug */
-.debug {
-    width: 100%;
-    height: 500px;
-}
-
-header.debug {
-    background-color: rgb(42, 110, 212);
-}
-
-.debug .container {
-    height: 100%;
-    border: 1px solid black;
-}
-
-#jumbotron.debug {
-    background-color: rgb(72, 128, 212);
-}
-
-main.debug {
-    background-color: rgb(255, 254, 168);
-}
-
-footer.debug {
-    background-color: rgb(228, 228, 228);
-}
-/* fine debug */
-
-
 
 /* regole header */
 header {
-    width: 100%;
     line-height: 80px;
-    background-color: #3163e0;
+    background-color: #255ee9;
 }
 
 header .logo {
-    float: left;
     width: 15%;
+    float: left;
 }
 
 header .logo img {
@@ -75,51 +127,218 @@ header .logo img {
 }
 
 header nav {
-    float: left;
     width: 70%;
+    float: left;
     text-align: center;
+    color: #fff;
 }
 
 header nav ul li {
     display: inline-block;
-    list-style-type: none;
-    padding: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    margin: 0px 20px;
 }
 
 #login {
-    float: right;
     width: 15%;
+    float: right;
     text-align: right;
-}
-
-header .btn {
-    color: #000;
-    text-decoration: none;
-    background-color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
 }
 /* fine regole header */
 
 
 
-/* regole jumbotron */
 
+/* regole jumbotron */
+#jumbotron {
+    background-image: url('img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#jumbotron .container {
+    width: 50%;
+    text-align: center;
+}
+
+#jumbotron .btn {
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+#jumbotron .btn.colored {
+    background-color: #000;
+    color: #fff;
+}
+
+#jumbotron .btn.white i {
+    margin-right: 5px;
+}
 /* fine jumbotron */
 
 
 
+
 /* regole main */
+main section.grey {
+    background-color: rgb(247, 246, 246);
+}
+
+main section .container {
+    padding: 150px 0;
+}
+
+
+/* section a griglia */
+main section.grid .img-box{
+    width: 55%;
+}
+
+main section.grid .img-box img{
+    width: 100%;
+    object-fit: contain;
+}
+
+main section.grid .txt-box{
+    width: 30%;
+}
+/* section a griglia */
+
+
+/* section a griglia dispari */
+main section.grid.odd .img-box{
+    float: left;
+}
+
+main section.grid.odd .txt-box{
+    float: right;
+}
+/* fine section a griglia dispari */
+
+
+/* section a griglia pari */
+main section.grid.even .img-box{
+    float: right;
+}
+
+main section.grid.even .txt-box{
+    float: left;
+}
+/* fine section a griglia pari */
+
+
+/* section stack */
+main section.stack .container{
+    text-align: center;
+}
+
+main section.stack .img-box{
+    width: 100%;
+}
+
+main section.stack .img-box img {
+    width: 100%;
+    object-fit: contain;
+}
+
+main section.stack .cta-box .btn.colored {
+    display: inline-block;
+    background-color: rgb(138, 156, 218);
+}
+
+main section.stack .cta-box .btn i {
+    margin-right: 5px;
+}
+
+main section.stack .cta-box .wrap {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main section.stack .cta-box img {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* fine section stack */
 
 /* fine regole main */
 
 
 
 /* regole footer */
+footer {
+    background-color: rgb(35, 39, 42);
+    color: #fff;
+    font-size: 0.9em;
+    padding: 70px 0px;
+}
+
+/* row menu */
+footer .row.menu {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(115, 137, 219);
+}
+
+footer .row.menu .title {
+    color: rgb(115, 137, 219);
+    font-weight: bold;
+}
+
+footer .row.menu .lang-social {
+    float: left;
+    width: 20%;
+    margin-right: 10%;
+}
+
+#ita-flag {
+    width: 20px;
+}
+
+#social a {
+    margin-right: 15px;
+}
+
+footer .row.menu .column {
+    float: left;
+    width: calc(50% / 4);
+    margin-right: 5%;
+}
+
+footer .row.menu .column li {
+    margin-bottom: 10px;
+}
+/* fine row menu */
+
+/* row bottom */
+footer .row.bottom {
+    line-height: 90px;
+}
+
+footer .row.bottom .logo {
+    width: 15%;
+    float: left;
+}
+
+footer .row.bottom .logo img {
+    vertical-align: middle;
+    width: 80%;
+}
+
+#register {
+    width: 15%;
+    float: right;
+    text-align: right;
+}
+
+#register .btn.colored {
+    background-color: rgb(138, 156, 218);
+    font-size: 0.8em;
+}
+/* fine row bottom */
 
 /* fine regole footer */
